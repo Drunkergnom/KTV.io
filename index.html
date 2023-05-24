@@ -1,0 +1,31 @@
+<html>
+<body>
+	<form name="person" onSubmit=F()>
+ФИО: <input type="text" name="Fio"><br><br>
+День рождения : <input type="text" name= "birhtday"><br><br>
+Должность <select name="position" size="1">
+<option name="director">Директор</option>
+<option selected name="manager">Манагер</option>
+</select>
+<br>
+<br>
+Оклад: <input type="text" name="salary">
+Пол: <input type= "radio" name = "sex" id= "sex" value= "Male" Мужской <br>
+<input type = "radio" name="sex" id= “sex“ value= "Female" checked>Женский <br> <br>
+<input type= "submit" value ="save">
+</form>
+
+<script>
+function F()
+{
+fio = person.fio.value
+birhtday = person. birhtday.value
+index_position = person.position. selectedindex
+salary = person.salary.value
+sex = document. getElementByld( *sex’).value
+S = "<table border=1><tr><th>ФИО</th><th>ДР</th><th>Должность</th><th>Оклад</th><th>Пол</th></tr>"fio +"; " + birhtday +"; "+ index position +"; " + salary"; "+ sex"; 
+document .write(s)
+}
+</script>
+</body>
+</html>
